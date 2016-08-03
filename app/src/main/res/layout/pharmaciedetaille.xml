@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:focusableInTouchMode="false"
+    android:background="#fff5f5f5">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff1d9c00"
+        android:id="@+id/linearLayout2"></LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffcbcbcb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/container_search"
+        android:layout_below="@+id/linearLayout2"
+        >
+
+
+
+        <SearchView
+
+            android:text="@string/icon_cart"
+            android:textSize="32dp"
+            android:id="@+id/searchview1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center"
+
+            />
+
+
+        <Button
+
+            android:text="@string/icon_normal"
+            android:textSize="20dp"
+            android:id="@+id/button_normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center" />
+
+        <Button
+
+            android:text="@string/icon_garde"
+            android:textSize="30dp"
+            android:id="@+id/button_garde"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/container_search"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#ff1d9c00"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/icon_adresse"
+        android:id="@+id/adr"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center"
+        android:textColor="#ff1d9c00"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adresse"
+        android:id="@+id/textView4"
+        android:textSize="15dp"
+        android:textColor="#ff1d9c00"
+        android:layout_alignTop="@+id/adr"
+        android:layout_toRightOf="@+id/adr"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/adresse"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adresse"
+        android:id="@+id/adresse"
+        android:textSize="15dp"
+        android:textColor="#de6c6c6c"
+        android:layout_below="@+id/adr"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/icon_distance"
+        android:id="@+id/dist1"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#de6c6c6c"
+        android:layout_below="@+id/adresse"
+        android:layout_alignLeft="@+id/adresse"
+        android:layout_alignStart="@+id/adresse"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="dist2"
+        android:id="@+id/dist2"
+        android:textSize="15dp"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#de6c6c6c"
+        android:layout_alignTop="@+id/dist1"
+        android:layout_toRightOf="@+id/dist1"
+        android:layout_toEndOf="@+id/dist1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="dist3"
+        android:id="@+id/dist3"
+        android:textSize="15dp"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#de6c6c6c"
+        android:layout_alignTop="@+id/dist4"
+        android:layout_toRightOf="@+id/dist4"
+        android:layout_toEndOf="@+id/dist4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/icon_Horloge"
+        android:layout_marginRight="5dp"
+        android:id="@+id/dist4"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:textColor="#de6c6c6c"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_below="@+id/adresse"
+        android:layout_toRightOf="@+id/dist2"
+        android:layout_toEndOf="@+id/dist2" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="Voir l&apos;itinéraire sur une carte"
+        android:id="@+id/button"
+        android:textSize="13dp"
+        android:background="@drawable/radius"
+        android:textColor="#E5E5E5"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center"
+        android:layout_below="@+id/dist1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/a"
+        android:background="#ffcbcbcb"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/dist1"
+        android:layout_alignStart="@+id/dist1"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"></RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/a"
+        android:layout_alignLeft="@+id/dist2"
+        android:layout_alignStart="@+id/dist2" />
+
+</RelativeLayout>

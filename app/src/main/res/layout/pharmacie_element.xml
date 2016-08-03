@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00002">
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/icon_normal"
+                android:id="@+id/garde_normal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:textColor="#de6c6c6c"
+                android:textSize="30dp"
+                android:gravity="center_vertical|center_horizontal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/name"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/garde_normal"
+                android:layout_toEndOf="@+id/garde_normal"
+                android:textColor="#ff1d9c00"
+                android:textSize="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Adresse"
+                android:id="@+id/adress"
+                android:textColor="#de6c6c6c"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/garde_normal"
+                android:layout_toEndOf="@+id/garde_normal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="18dp"
+                android:textSize="13dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|left|bottom|center_vertical|right"
+            android:gravity="center_vertical|center_horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/icon_points"
+                android:id="@+id/fleche"
+                android:textColor="#de6c6c6c"
+                android:textSize="13dp"
+                android:gravity="center_vertical|center" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

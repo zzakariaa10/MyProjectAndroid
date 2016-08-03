@@ -1,0 +1,105 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainActivity"
+    android:weightSum="1"
+    android:id="@+id/relative1"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container2"
+        android:layout_above="@+id/linearLayout">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff1b0648"
+        >
+
+        <Button
+
+            android:text="@string/icon_medical"
+            android:textSize="32dp"
+            android:id="@+id/button1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center" />
+
+
+        <Button
+
+            android:text="@string/icon_hopital"
+            android:textSize="32dp"
+            android:id="@+id/button2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center" />
+
+        <Button
+
+            android:text="@string/icon_cart"
+            android:textSize="32dp"
+            android:id="@+id/button3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center" />
+
+        <Button
+
+            android:text="@string/icon_cart"
+            android:textSize="32dp"
+            android:id="@+id/button4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

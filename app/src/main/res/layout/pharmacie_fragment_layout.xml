@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:focusableInTouchMode="false"
+    android:background="#fff5f5f5">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff1d9c00"
+        android:id="@+id/linearLayout2"></LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffcbcbcb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/container_search"
+        android:layout_below="@+id/linearLayout2"
+        >
+
+
+
+
+
+
+
+
+
+        <SearchView
+
+            android:text="@string/icon_cart"
+            android:textSize="32dp"
+            android:id="@+id/searchview1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center"
+
+            />
+
+
+        <Button
+
+            android:text="@string/icon_normal"
+            android:textSize="20dp"
+            android:id="@+id/button_normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center" />
+
+        <Button
+
+            android:text="@string/icon_garde"
+            android:textSize="30dp"
+            android:id="@+id/button_garde"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="#de6c6c6c"
+            android:background="#E5E5E5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center" />
+
+
+
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/container_search" />
+</RelativeLayout>
