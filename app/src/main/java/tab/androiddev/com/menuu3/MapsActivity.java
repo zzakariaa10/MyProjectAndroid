@@ -55,14 +55,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btnFindPath.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendRequest();
-            }
+                sendRequest( etOrigin.getText().toString(), etDestination.getText().toString());            }
         });
     }
 
-    private void sendRequest() {
-        String origin = etOrigin.getText().toString();
-        String destination = etDestination.getText().toString();
+    public void sendRequest(String origin, String destination) {
         if (origin.isEmpty()) {
             Toast.makeText(this, "Please enter origin address!", Toast.LENGTH_SHORT).show();
             return;
@@ -116,7 +113,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }
     }
-
     @Override
     public void onDirectionFinderSuccess(List<Route> routes) {
         progressDialog.dismiss();
